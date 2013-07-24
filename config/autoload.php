@@ -19,7 +19,9 @@
 
 
 /**
- * Extension folder
+ * Register the classes
  */
-$GLOBALS['TL_LANG']['MOD']['securepasswords'] = array('Secure passwords extension');
-
+ClassLoader::addClasses(array
+(
+	'SecurePasswords' => 'system/modules/securepasswords/SecurePasswords.php',
+));
